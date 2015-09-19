@@ -255,7 +255,7 @@ if($host=="localhost" || $host=="127.0.0.1" || strrpos($host,"localhost") >= 0 |
 }
 if(!$config_included) {
 	if(file_exists(__DIR__.'/../config') && file_exists(__DIR__.'/../config/dbconfig.php')){
-		require_once(__DIR__.'/../config/production/dbconfig.php');
+		require_once(__DIR__.'/../config/dbconfig.php');
 	}
 	else {
 		echo "dbconfig file is missing";
